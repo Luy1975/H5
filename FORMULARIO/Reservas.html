@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Reservas H5</title>
+        <link rel="icon" href="IMAGENES/h5.png" sizes="10x10">
+    </head>
+    <body>
+        <h1>Solicitud de reservas</h1>
+    <form action="reservas.php" method="get">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" maxlength="20" required><br>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" maxlength="30" required><br>
+        <label for="phone">Telefono Movil</label>
+        <input type="pre" id="-prefix" name="prefijo" value="+34" size="3" minlength="3">
+        <input type="tel" id="phone" name="Telefono" placeholder="663-782-567" size="12" maxlength="12"><br>
+        <label for="fecha_entrada">Fecha de entrada</label>
+        <input type="date" id="fecha_entrada" name="fecha_entrada" required>
+        <label for="fecha_salida">Fecha de Salida</label>
+        <input type="date" id="fecha_salida" name="fecha_salida" required><br>
+        <fieldset>
+            <legend>Habitación para:</legend>
+            <label for="numero_adultos">Adultos</label> 
+            <input type="number" id="numero_adultos" name="numero_adultos" min="1" max="2">
+            <label for="numero_niños">Niños</label>
+            <input type="number" id="numero_niños" name="numero_niños" min="0" max="2"><br>
+        </fieldset>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@gmail.com" maxlength="30"><br>
+        <button type="submit">Solicitar</button><button type="reset">Reset</button>
+    </form>
+    </body>
+</html>
